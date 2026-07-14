@@ -17,9 +17,9 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <Link to="/" className="brand" aria-label="XMIE 首页">
-          <span className="brand-mark">XM</span>
-          <span>XMIE / 麦曾毅</span>
+        <Link to="/" className="brand" aria-label="麦曾毅个人作品集首页">
+          <span className="brand-mark">麦</span>
+          <span>麦曾毅 / AI 影视创作者</span>
         </Link>
 
         <nav className="desktop-nav" aria-label="主导航">

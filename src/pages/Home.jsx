@@ -9,28 +9,30 @@ export default function Home() {
     <>
       <section className="hero page-shell" id="top">
         <div className="hero-topline">
-          <p>VISUAL COMMUNICATION DESIGNER</p>
+          <p>AI FILM CREATOR / AIGC DIRECTOR</p>
           <p>BASED IN CHENGDU · CHINA</p>
         </div>
         <Reveal className="hero-title-wrap">
           <h1>
-            数字影像，<br />
-            <span>重构感知。</span>
+            以 AI 为笔，<br />
+            <span>重写影像。</span>
           </h1>
         </Reveal>
         <div className="hero-bottom">
-          <p>在传统视听语言与 AIGC 前沿之间，探索更有温度、更具想象力的视觉叙事。</p>
+          <p>我是麦曾毅，专注 AIGC 短片导演与影视后期制作。从分镜、剪辑到调色与声音设计，用完整的视听语言让生成影像真正成为故事。</p>
           <a href="#selected-work" className="scroll-cue"><ArrowDown size={17} /> SCROLL TO EXPLORE</a>
         </div>
       </section>
 
       <div className="discipline-strip" aria-label="专业领域">
         <div>
-          <span>AIGC VISUAL</span><i />
-          <span>FILM EDITING</span><i />
+          <span>AI VIDEO GENERATION</span><i />
+          <span>STORYBOARD DESIGN</span><i />
+          <span>VIDEO EDITING</span><i />
           <span>COLOR GRADING</span><i />
+          <span>SOUND DESIGN</span><i />
           <span>VISUAL STORYTELLING</span><i />
-          <span>BRAND FILM</span>
+          <span>AIGC FILM DIRECTION</span>
         </div>
       </div>
 
