@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom page-shell">
         <p>© {new Date().getFullYear()} XMIE. ALL RIGHTS RESERVED.</p>
-        <div><Link to="/projects">作品</Link><Link to="/about">关于</Link><a href="mailto:hello@xmieworks.studio">邮件</a></div>
+        <div><Link to="/projects">作品</Link><Link to="/about">关于</Link><a href="mailto:2283254441@qq.com">邮件</a></div>
         <a href="#top">BACK TO TOP ↑</a>
       </div>
     </footer>
