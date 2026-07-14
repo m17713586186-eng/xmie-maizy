@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.pnpm-store/
+.site-git/
+.openai/site-bundle.tar.gz
+初始素材准备/

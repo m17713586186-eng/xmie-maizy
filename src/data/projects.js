@@ -1,0 +1,93 @@
+export const projects = [
+  {
+    slug: 'cache-ghost',
+    title: '缓存幽灵',
+    englishTitle: 'Cache Ghost',
+    category: 'AIGC 实验短片',
+    year: '2025',
+    image: '/images/cache-ghost.jpg',
+    accent: '#c7ff4a',
+    role: '概念 / AI 影像 / 剪辑',
+    client: '个人实验',
+    featured: true,
+    summary: '一次关于算法记忆、技术兴奋与未来焦虑的视觉实验。',
+    description: [
+      '《缓存幽灵》是一部由人工智能技术辅助完成的实验性短片。灵感来自第一次接触新一代 AI 视频生成工具时的复杂感受：创造力被突然放大的惊喜，以及面对未知变化时难以回避的不安。',
+      '作品以“缓存”作为隐喻，把未被删除的数字残影转化为游荡在现实与网络之间的视觉幽灵。通过高对比色彩、非线性剪辑与有意保留的生成痕迹，讨论人与技术正在形成的新关系。',
+    ],
+    services: ['概念设定', 'AI 视觉生成', '剪辑与声音设计'],
+  },
+  {
+    slug: 'paper-crane',
+    title: '千纸鹤',
+    englishTitle: 'A Thousand Paper Cranes',
+    category: 'AIGC 情感短片',
+    year: '2025',
+    image: '/images/paper-crane.jpg',
+    accent: '#ff6b45',
+    role: '导演 / 视觉 / 后期',
+    client: '个人创作',
+    summary: '用一张纸、一双手和一段等待，折叠关于思念与爱的记忆。',
+    description: [
+      '《千纸鹤》以生活情感为核心，通过一只只承载心意的纸鹤，讲述人与人之间关于等待、思念与爱的故事。日常的折纸动作在影片中成为连接记忆的象征。',
+      '影片用安静、克制的影像语言展开叙事。自然光影、手部动作与纸张纹理共同构成温暖而略带伤感的氛围，让情绪在微小细节中逐渐累积。',
+    ],
+    services: ['叙事策划', 'AIGC 全流程', '剪辑与调色'],
+  },
+  {
+    slug: 'ink-campus',
+    title: '水墨校园',
+    englishTitle: 'Ink Campus',
+    category: 'AI 校园宣传片',
+    year: '2025',
+    image: '/images/ink-campus.jpg',
+    accent: '#74a7ff',
+    role: '创意 / AI 影像 / 后期',
+    client: '成都工业学院',
+    summary: '让传统水墨与现代校园建筑在数字影像中相遇。',
+    description: [
+      '项目以“数字赋能校园文化传播”为创作理念，尝试用人工智能图像与视频生成技术，探索高校宣传片的新表达。',
+      '视觉上将水墨插画的柔和笔触与现代建筑的理性结构并置，从校园整体形象逐步深入教学空间与人文细节，营造庄重、典雅又具有青春气息的观看体验。',
+    ],
+    services: ['视觉风格开发', 'AI 动态生成', '后期合成'],
+  },
+  {
+    slug: 'youth',
+    title: '诚助青春，德润人生',
+    englishTitle: 'Youth in Good Faith',
+    category: 'AI 公益短片',
+    year: '2024',
+    image: '/images/youth.jpg',
+    accent: '#ffd84d',
+    role: '创意 / 制作 / 后期',
+    client: '成都工业学院',
+    summary: '把资助育人的制度语言，转化为有温度的青春叙事。',
+    description: [
+      '作品围绕高校学生成长中的资助政策、诚信意识与奋斗精神展开，以影像呈现校园资助工作背后真实的人文关怀。',
+      '制作流程在传统影视方法中引入 AI，辅助主题分析、镜头构思和视觉方案探索，再通过人工剪辑、声音设计与节奏控制，让生成内容自然融入校园场景。',
+    ],
+    services: ['主题策划', 'AI 辅助制作', '剪辑与包装'],
+  },
+  {
+    slug: 'brand-film',
+    title: '小角楼品牌影片',
+    englishTitle: 'Xiao Jiao Lou',
+    category: '商业品牌影像',
+    year: '2024',
+    image: '/images/brand-film.png',
+    accent: '#d83a2f',
+    role: '剪辑 / 调色 / 后期',
+    client: '小角楼',
+    summary: '在地域、人情与酿造工艺之间，建立品牌的情感质感。',
+    description: [
+      '这是一支以品牌文化与产品价值为核心的商业宣传片。作品从人物交流与生活场景切入，再以自然景观、生产环境和产品细节逐步展开品牌故事。',
+      '视觉表达结合纪实观察与广告质感：航拍建立地域尺度，中近景保留人物温度，产品特写与光影变化则强化工艺和品质感。',
+    ],
+    services: ['商业剪辑', '色彩管理', '后期交付'],
+  },
+]
+
+export const getNextProject = (slug) => {
+  const index = projects.findIndex((project) => project.slug === slug)
+  return projects[(index + 1) % projects.length]
+}
