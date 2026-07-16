@@ -11,7 +11,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="footer-bottom page-shell">
-        <p>© {new Date().getFullYear()} 麦曾毅. ALL RIGHTS RESERVED.</p>
+        <p>© {new Date().getFullYear()} xmie / 麦曾毅. ALL RIGHTS RESERVED.</p>
         <div><Link to="/projects">作品</Link><Link to="/about">关于</Link><a href="mailto:2283254441@qq.com">邮件</a></div>
         <a href="#top">BACK TO TOP ↑</a>
       </div>

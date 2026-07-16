@@ -56,7 +56,7 @@ export default function Contact() {
               <span className="wechat-live"><i /> ONLINE</span>
             </div>
             <div className="wechat-qr-frame">
-              <img src="/images/wechat-qr.jpg" alt="AI 影视创作者麦曾毅的微信二维码，微信号 m2283254441" />
+              <img src="/images/wechat-qr.jpg" alt="AI 影视创作者 xmie（麦曾毅）的微信二维码，微信号 m2283254441" />
             </div>
             <div className="wechat-card-foot">
               <span>微信号</span><strong>m2283254441</strong>
