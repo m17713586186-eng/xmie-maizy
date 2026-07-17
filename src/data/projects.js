@@ -95,7 +95,7 @@ export const projects = [
     category: 'AI 公益短片',
     year: '2026.06',
     image: '/images/youth.jpg',
-    video: '/videos/youth.mov',
+    video: '/videos/youth.mp4',
     videoType: 'local',
     stills: [
       '/images/stills/youth/01.png',
