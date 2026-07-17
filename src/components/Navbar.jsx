@@ -1,5 +1,5 @@
 import { Clapperboard, House, Mail, UserRound } from 'lucide-react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const links = [
   ['作品', '/projects'],
@@ -15,6 +15,11 @@ const mobileLinks = [
 ]
 
 export default function Navbar() {
+  const { pathname } = useLocation()
+  const activeIndex = mobileLinks.findIndex(([, href]) => (
+    href === '/' ? pathname === '/' : pathname.startsWith(href)
+  ))
+
   return (
     <>
       <header className="site-header">
@@ -37,6 +42,19 @@ export default function Navbar() {
       </header>
 
       <nav className="mobile-bottom-nav" aria-label="移动端主导航">
+        <span
+          className="mobile-bottom-nav-indicator"
+          aria-hidden="true"
+          style={{
+            opacity: activeIndex === -1 ? 0 : 1,
+            transform: `translate3d(${Math.max(activeIndex, 0) * 100}%, 0, 0)`,
+          }}
+        >
+          <span
+            key={activeIndex}
+            className="mobile-bottom-nav-indicator-inner"
+          />
+        </span>
         {mobileLinks.map(([label, href, Icon]) => (
           <NavLink
             key={href}
